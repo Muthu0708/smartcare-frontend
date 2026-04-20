@@ -6,7 +6,7 @@ import {
   FaUserTag,
   FaCalendarCheck,
 } from "react-icons/fa";
-import { HiOutlineHand, HiOutlineUser } from "react-icons/hi";
+import { HiOutlineHand } from "react-icons/hi";
 
 type UserType = {
   id?: number;
