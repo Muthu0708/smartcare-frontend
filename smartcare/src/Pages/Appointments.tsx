@@ -134,7 +134,7 @@ export const Appointments = () => {
 
       showToast("Booked Successfully", "success");
     } catch (err: any) {
-      showToast("Booking failed", "error");
+      showToast("Sorry, slot already booked this time, Please Choose another slot.","error");
     }
   };
 
