@@ -98,7 +98,7 @@ export const MyAppointments = () => {
                   item.Doctor?.image
                     ? item.Doctor.image.startsWith("http")
                       ? item.Doctor.image
-                      : `http://localhost:5002${item.Doctor.image}`
+                      : `${import.meta.env.VITE_API_URL}${item.Doctor.image}`
                     : "/default-doctor.png"
                 }
                 alt="doctor"
