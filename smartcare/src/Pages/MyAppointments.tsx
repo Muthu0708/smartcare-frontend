@@ -33,6 +33,8 @@ export const MyAppointments = () => {
       const res = await API.get("/appointments");
       console.log("Appointments:", res.data);
       setAppointments(res.data || []);
+      console.log(res.data);
+      console.log(res.data[0]?.Doctor?.image);
     } catch (error: any) {
       showToast(
         error.response?.data?.message || "Failed to load appointments",
